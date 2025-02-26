@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="index.css">
+    <title>Weather Application</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="searchbox">
+                <input type="text" placeholder="Enter City Name" class="input-box">
+                <button id="search"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </div>
+        </div>
+
+        <div class="notfound">
+            <h1>Sorry, location is not found!!</h1>
+            <img src="/images/404.png" alt="Error">
+        </div>
+      
+        <div class="weatherbody">
+            <img src="/images/white_cloud-removebg-preview (2).png" alt="weatherimage" class="weather-image">
+            <div class="weather-box">
+                
+                <p class="temprature">0 <sup>°C</sup></p>
+                <p class="description">Light</p>
+            </div>
+
+            <div class="weatherdetail">
+                <div class="humidity">
+                    <img src="/images/humiity.png" alt="">
+                    <div class="text">
+                        
+                        <span id="humidity">45%</span>   
+                        <p id="humidity">Humidity</p>
+                    </div>
+                </div>
+                <div class="windspeed">
+                    <img src="/images/wind-removebg-preview (2).png" alt="">
+                    <div class="text">
+                
+                        <span id="wind-speed">12km/h</span>
+                        <p id="wind-speed">Windspeed</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+
+</html>

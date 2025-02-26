@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    font-family: sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(/images/blue\ clouds.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.container {
+    width: 400px;
+    height: min-content;
+    backdrop-filter: blur(60px);
+    padding: 28px;
+    border-radius: 20px;
+    border: 2px ridge rgb(82, 127, 196);
+}
+
+.searchbox {
+    width: 100%;
+    height: min-content;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.input-box {
+    width: 84%;
+    font-size: 20px;
+    text-transform: capitalize;
+    color: black;
+    background-color:aliceblue;
+    padding: 12px 16px;
+    border-radius: 14px;
+    border-color: rgb(0, 0, 0);
+}
+
+.searchbox .input-box::placeholder {
+    color: rgb(14, 13, 13);
+}
+
+.searchbox button {
+    width: 46px;
+    height: 46px;
+    background-color: aliceblue;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.searchbox button:hover {
+    background-color: rgb(163, 225, 253);
+}
+
+.weatherbody img {
+    width: 60%;
+}
+
+.weatherbody {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-block: 20px;
+}
+
+.weather-box {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.weather-box .temprature {
+    font-size: 40px;
+    font-weight: 800;
+    position: relative;
+}
+
+.weather-box .temprature sup {
+    font-size: 20px; 
+    position: absolute;
+    font-weight: 600;
+}
+.weather-box .description{
+    font-size: 20px; 
+    font-weight: 700;
+    text-transform: capitalize;
+}
+.weatherdetail {
+width: 100%;
+display: flex;
+justify-content: space-between;
+margin-top: 30px;
+}
+.humidity{
+   display: flex;
+   align-items: center;
+   text-align: center;
+   padding-right: 30px;
+   margin-right: 20px;
+   font-weight: 500;
+}
+
+.windspeed{
+    display: flex;
+   align-items: center;
+   text-align: center;
+   padding-right: 40px;
+   margin-left: 20px;
+   font-weight: 500;
+
+}
+.notfound{
+    margin-top: 20px;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.notfound h1{
+  font-size: 20px;
+  color: rgb(83, 81, 81);
+  margin-block-end: 15px;
+
+}
+.notfound img{
+    width: 80%;
+}
